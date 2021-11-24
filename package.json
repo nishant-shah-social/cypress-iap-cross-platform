@@ -1,0 +1,37 @@
+{
+  "name": "cypress-iap-cross-platform",
+  "version": "0.0.0-development",
+  "description": "Cypress command to authenticate with IAP on Mac, Linux & Windows",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "author": "Nishant Shah <nishant.shah2@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "visit.js",
+    "utils.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "semantic-release": "semantic-release",
+    "format": "prettier --write '*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishant-shah-social/cypress-iap-cross-platform.git"
+  },
+  "keywords": [
+    "cypress",
+    "identity aware proxy",
+    "iap",
+    "iap-verification",
+    "google-authentication"
+  ],
+  "bugs": {
+    "url": "https://github.com/coltdorsey/cypress-iap/issues"
+  },
+  "homepage": "https://github.com/nishant-shah-social/cypress-iap-cross-platform#readme",
+  "dependencies": {
+    "google-auth-library": "^6.1.0",
+    "underscore.string": ">=3.3.5"
+  }
+}
