@@ -1,6 +1,6 @@
 {
   "name": "cypress-iap-cross-platform",
-  "version": "0.0.0-development",
+  "version": "1.0.0-development",
   "description": "Cypress command to authenticate with IAP on Mac, Linux & Windows",
   "main": "index.js",
   "types": "index.d.ts",
