@@ -5,7 +5,7 @@ Cypress.Commands.overwrite('visit', (originalFn, subject, ...args) => {
     } else {
         //for windows os
         if (navigator.userAgent.indexOf("Win") != -1) {
-            cy.exec('curl -I ' + Cypress.config().baseUrl + ' | awk "/^location/ {split($NF, a, /[=&]/); print a[2]}"').then((client_id) => {
+            cy.exec('curl -I ' + Cypress.config().baseUrl + ' | awk "/^Location/ {split($NF, a, /[=&]/); print a[2]}"').then((client_id) => {
                 return client_id.stdout
             }).then(client_id => {
                 cy.task('getIAPToken', {
